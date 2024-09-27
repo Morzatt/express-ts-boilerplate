@@ -4,7 +4,7 @@ import pino from "pino"
 import config from "./config"
 
 const logger = pino({
-    level: config.logLevel || 'info',
+    level: "info",
     formatters: {
         level: (label) => {
             return { severity: label.toUpperCase() }
